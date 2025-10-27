@@ -1,138 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | ONG Natureza - Reflorestamento e Vida</title>
-    <link rel="stylesheet" href="/Ong-natureza-2/assets/css/style.css"> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG Natureza - Reflorestamento e Vida</title>
+
+  <!-- Caminho relativo recomendado para GitHub Pages (project site) -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    
-    <header class="main-header">
-        <div class="container header-content">
-            
-            <a href="index.html" class="logo">
-                <img src="/Ong-natureza-2/assets/img/logo.png" alt="Logo ONG Natureza: Reflorestamento e Vida">
-            </a>
+  <header>
+    <a href="./"><img src="assets/images/logo.png" alt="Logo ONG Natureza" style="height:56px" /></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projetos.html">Projetos Sociais</a></li>
+        <li><a href="doar.html">Como Doar</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <nav class="main-nav" id="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="has-submenu">
-                        <a href="projetos.html">Projetos Sociais</a>
-                        <ul class="submenu">
-                            <li><a href="projetos.html#reflorestamento">Reflorestamento</a></li>
-                            <li><a href="projetos.html#educacao">Educação Ambiental</a></li>
-                            <li><a href="projetos.html#pesquisa">Pesquisa e Biodiversidade</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Como Doar</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
+  <main>
+    <h1>Guardiões do Futuro: Proteja o que é nosso.</h1>
+    <p>Junte-se à ONG Natureza na luta pelo reflorestamento e educação ambiental em todo o país.</p>
 
-            <div class="header-actions">
-                <a href="cadastro.html" class="button button-primary button-small">Voluntariado</a>
-                <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </div>
-        </div>
-    </header>
+    <p><a href="voluntario.html">Quero ser Voluntário</a> • <a href="doacao.html">Quero Fazer uma Doação</a></p>
 
-    <main>
-        
-        <section class="hero-section hero-home">
-            <div class="container grid grid-12-cols hero-content">
-                <div class="col-md-6 hero-text">
-                    <h1 class="hero-title">Guardiões do Futuro: Proteja o que é nosso.</h1>
-                    <p class="hero-subtitle">Junte-se à ONG Natureza na luta pelo reflorestamento e educação ambiental em todo o país.</p>
-                    
-                    <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; gap: var(--space-l); margin-top: var(--space-l);">
-                        <a href="cadastro.html" class="button button-primary button-large">Quero ser Voluntário</a>
-                        <a href="#" class="button button-tertiary button-large">Quero Fazer uma Doação</a>
-                    </div>
-                </div>
-                
-                <figure class="col-md-6 hero-image-wrapper">
-                    <picture>
-                        <source srcset="/Ong-natureza-2/assets/img/banner_hero_principal.webp" type="image/webp">
-                        <img src="/Ong-natureza-2/assets/img/banner_hero_principal.jpg" alt="Pessoas plantando árvores em uma floresta" class="hero-image">
-                    </picture>
-                    <figcaption class="hero-caption">Mãos unidas pelo planeta: Plantando o futuro.</figcaption>
-                </figure>
-            </div>
-        </section>
+    <section>
+      <img src="assets/images/planting.jpg" alt="Pessoas plantando árvores em uma floresta" style="max-width:100%" />
+      <p>Mãos unidas pelo planeta: Plantando o futuro.</p>
+    </section>
 
-        <section class="section section-numbers">
-            <div class="container grid grid-12-cols">
-                <h2 class="col-span-12 section-title text-center">Nosso Impacto em Números</h2>
-                <div class="col-md-4 number-card">
-                    <h3>+150 Mil</h3>
-                    <p>Árvores plantadas e monitoradas</p>
-                </div>
-                <div class="col-md-4 number-card">
-                    <h3>+5 Mil</h3>
-                    <p>Voluntários engajados ativamente</p>
-                </div>
-                <div class="col-md-4 number-card">
-                    <h3>+200</h3>
-                    <p>Comunidades atendidas por educação</p>
-                </div>
-            </div>
-        </section>
+    <!-- resto do conteúdo -->
+  </main>
 
-        <section class="section section-missao">
-            <div class="container grid grid-12-cols content-with-image">
-                <div class="col-md-7 text-content">
-                    <h2 class="section-title">Nossa Missão é Restaurar e Educar</h2>
-                    <p>A ONG Natureza nasceu do desejo de restaurar áreas degradadas e capacitar a próxima geração de guardiões ambientais. Acreditamos que a mudança começa com a ação local e a conscientização global.</p>
-                    <p>Cada muda plantada e cada palestra educativa são passos firmes para um futuro mais verde e sustentável. Queremos garantir que as florestas e a biodiversidade brasileira continuem a prosperar.</p>
-                    <a href="projetos.html" class="button button-secondary button-small" style="margin-top: 20px;">Conheça Nossos Projetos &rarr;</a>
-                </div>
-                
-                <figure class="col-md-5 image-content">
-                    <picture>
-                        <source srcset="/Ong-natureza-2/assets/img/missao_colaboracao.webp" type="image/webp">
-                        <img src="/Ong-natureza-2/assets/img/missao_colaboracao.jpg" alt="Voluntários sorrindo e trabalhando juntos em uma causa ambiental." loading="lazy" class="round-image">
-                    </picture>
-                    <figcaption class="image-caption">Trabalho e colaboração com a comunidade.</figcaption>
-                </figure>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="main-footer">
-        <div class="container grid grid-12-cols">
-            
-            <div class="col-md-4 footer-contact">
-                <h3>Contato</h3>
-                <p>E-mail: contato@ongnatureza.org</p>
-                <p>Telefone: (00) 1234-5678</p>
-                <p>Endereço: Rua do Reflorestamento, 100 - Natureza, SP</p>
-            </div>
-            
-            <div class="col-md-4 footer-links">
-                <h3>Navegação</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projetos.html">Projetos Sociais</a></li>
-                    <li><a href="cadastro.html">Voluntariado</a></li>
-                    <li><a href="#">Como Doar</a></li>
-                </ul>
-            </div>
-            
-            <div class="col-md-4 footer-legal">
-                <h3>ONG Natureza</h3>
-                <p>&copy; 2024. Todos os direitos reservados.</p>
-                <p class="text-small">Arquitetura desenvolvida por Google AI Plus.</p>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="/Ong-natureza-2/assets/js/app.js"></script>
+  <footer>
+    <p>&copy; ONG Natureza</p>
+  </footer>
 </body>
 </html>
