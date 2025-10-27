@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Voluntariado ONG Natureza</title>
+    <link rel="stylesheet" href="/Ong-natureza-2/assets/css/style.css">
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="container header-content">
+            
+            <a href="index.html" class="logo">
+                <img src="/Ong-natureza-2/assets/img/logo.png" alt="Logo ONG Natureza: Reflorestamento e Vida">
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="has-submenu">
+                        <a href="projetos.html">Projetos Sociais</a>
+                        <ul class="submenu">
+                            <li><a href="projetos.html#reflorestamento">Reflorestamento</a></li>
+                            <li><a href="projetos.html#educacao">Educação Ambiental</a></li>
+                            <li><a href="projetos.html#pesquisa">Pesquisa e Biodiversidade</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Como Doar</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="cadastro.html" class="button button-primary button-small">Voluntariado</a>
+                <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="section section-cadastro">
+            <div class="container grid grid-12-cols">
+                
+                <div class="col-md-6 text-content">
+                    <h1 class="section-title">Seja um Guardião da Natureza!</h1>
+                    <p class="text-intro">Preencha o formulário abaixo para se juntar à nossa equipe de voluntários. Sua dedicação é vital para o sucesso dos nossos projetos de reflorestamento e educação.</p>
+                    
+                    <figure class="cadastro-image-wrapper">
+                        <picture>
+                            <source srcset="/Ong-natureza-2/assets/img/voluntarios_cavando.webp" type="image/webp">
+                            <img src="/Ong-natureza-2/assets/img/voluntarios_cavando.jpg" alt="Voluntários cavando a terra para plantar" class="round-image">
+                        </picture>
+                        <figcaption class="image-caption">Trabalho de campo e plantio em equipe.</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-6 form-content">
+                    
+                    <form id="volunteer-form" class="main-form">
+                        
+                        <fieldset class="form-group">
+                            <legend>Seus Dados Pessoais</legend>
+                            
+                            <div class="form-field col-span-12">
+                                <label for="nome">Nome Completo <span aria-hidden="true">*</span></label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            
+                            <div class="form-field col-md-6">
+                                <label for="email">E-mail <span aria-hidden="true">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-field col-md-6">
+                                <label for="telefone">Telefone (Whatsapp)</label>
+                                <input type="tel" id="telefone" name="telefone">
+                            </div>
+                            
+                        </fieldset>
+                        
+                        <fieldset class="form-group">
+                            <legend>Interesse no Voluntariado</legend>
+                            
+                            <div class="form-field col-md-6">
+                                <label for="interesse">Área de Interesse <span aria-hidden="true">*</span></label>
+                                <select id="interesse" name="interesse" required>
+                                    <option value="">Selecione a área</option>
+                                    <option value="reflorestamento">Reflorestamento e Plantio</option>
+                                    <option value="educacao">Educação Ambiental</option>
+                                    <option value="pesquisa">Pesquisa e Monitoramento</option>
+                                    <option value="administrativo">Administrativo/Marketing</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-field col-md-6">
+                                <label for="disponibilidade">Disponibilidade Semanal (Horas)</label>
+                                <input type="number" id="disponibilidade" name="disponibilidade" min="1" max="40">
+                            </div>
+
+                            <div class="form-field col-span-12">
+                                <label for="mensagem">Por que você quer ser voluntário?</label>
+                                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                            </div>
+                            
+                        </fieldset>
+                        
+                        <details role="group" class="details-info">
+                            <summary>Clique para ler nossa Política de Privacidade</summary>
+                            <p class="text-small">Ao se cadastrar, você concorda que seus dados serão usados exclusivamente para fins de comunicação e gestão de voluntariado da ONG Natureza. Não compartilhamos suas informações com terceiros.</p>
+                        </details>
+                        
+                        <div class="form-field col-span-12 content-center">
+                            <button type="submit" class="button button-primary button-large" id="submit-btn" disabled>Enviar Cadastro</button>
+                        </div>
+                        
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container grid grid-12-cols">
+            
+            <div class="col-md-4 footer-contact">
+                <h3>Contato</h3>
+                <p>E-mail: contato@ongnatureza.org</p>
+                <p>Telefone: (00) 1234-5678</p>
+                <p>Endereço: Rua do Reflorestamento, 100 - Natureza, SP</p>
+            </div>
+            
+            <div class="col-md-4 footer-links">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projetos.html">Projetos Sociais</a></li>
+                    <li><a href="cadastro.html">Voluntariado</a></li>
+                    <li><a href="#">Como Doar</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-4 footer-legal">
+                <h3>ONG Natureza</h3>
+                <p>&copy; 2024. Todos os direitos reservados.</p>
+                <p class="text-small">Arquitetura desenvolvida por Google AI Plus.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="/Ong-natureza-2/assets/js/app.js"></script>
+</body>
+</html>
