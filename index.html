@@ -5,38 +5,128 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ONG Natureza - Reflorestamento e Vida</title>
 
-  <!-- Caminho relativo recomendado para GitHub Pages (project site) -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/design-system.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <script defer src="assets/js/menu.js"></script>
+  <script defer src="assets/js/ui.js"></script>
 </head>
 <body>
-  <header>
-    <a href="./"><img src="assets/images/logo.png" alt="Logo ONG Natureza" style="height:56px" /></a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projetos.html">Projetos Sociais</a></li>
-        <li><a href="doar.html">Como Doar</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+  <a class="skip-link" href="#main">PULAR PARA O CONTEÚDO</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="./"><img src="assets/images/logo.png" alt="Logo ONG Natureza" /></a>
+
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="menu-list" aria-label="Abrir menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <ul id="menu-list" class="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="has-submenu">
+            <a href="projetos.html" aria-haspopup="true" aria-expanded="false">Projetos Sociais</a>
+            <ul class="submenu" aria-label="submenu projetos">
+              <li><a href="reflorestamento.html">Reflorestamento</a></li>
+              <li><a href="educacao.html">Educação Ambiental</a></li>
+              <li><a href="pesquisa.html">Pesquisa e Biodiversidade</a></li>
+            </ul>
+          </li>
+          <li><a href="doar.html">Como Doar</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h1>Guardiões do Futuro: Proteja o que é nosso.</h1>
-    <p>Junte-se à ONG Natureza na luta pelo reflorestamento e educação ambiental em todo o país.</p>
-
-    <p><a href="voluntario.html">Quero ser Voluntário</a> • <a href="doacao.html">Quero Fazer uma Doação</a></p>
-
-    <section>
-      <img src="assets/images/planting.jpg" alt="Pessoas plantando árvores em uma floresta" style="max-width:100%" />
-      <p>Mãos unidas pelo planeta: Plantando o futuro.</p>
+  <main id="main" class="site-main">
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Guardiões do Futuro: Proteja o que é nosso.</h1>
+        <p>Junte-se à ONG Natureza na luta pelo reflorestamento e educação ambiental em todo o país.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="voluntario.html">Quero ser Voluntário</a>
+          <a class="btn ghost" href="doacao.html">Quero Fazer uma Doação</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/images/planting.jpg" alt="Pessoas plantando árvores em uma floresta" />
+      </div>
     </section>
 
-    <!-- resto do conteúdo -->
+    <section class="stats container" aria-labelledby="impacto">
+      <h2 id="impacto">Nosso Impacto em Números</h2>
+      <div class="grid">
+        <article class="card col-4">
+          <h3>+150 Mil</h3>
+          <p>Árvores plantadas e monitoradas</p>
+        </article>
+        <article class="card col-4">
+          <h3>+5 Mil</h3>
+          <p>Voluntários engajados ativamente</p>
+        </article>
+        <article class="card col-4">
+          <h3>+200</h3>
+          <p>Comunidades atendidas por educação</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects container">
+      <h2>Projetos em Destaque</h2>
+      <div class="grid">
+        <article class="card col-4">
+          <img src="assets/images/project-1.jpg" alt="Projeto Reflorestamento" />
+          <h3>Reflorestamento</h3>
+          <p>Recuperação de áreas degradadas e conservação de espécies nativas.</p>
+          <a class="btn small" href="projetos.html">Saiba mais</a>
+        </article>
+        <article class="card col-4">
+          <img src="assets/images/project-2.jpg" alt="Projeto Educação" />
+          <h3>Educação Ambiental</h3>
+          <p>Palestras e oficinas para escolas e comunidades.</p>
+          <a class="btn small" href="projetos.html">Saiba mais</a>
+        </article>
+        <article class="card col-4">
+          <img src="assets/images/project-3.jpg" alt="Pesquisa e Biodiversidade" />
+          <h3>Pesquisa e Biodiversidade</h3>
+          <p>Estudos para proteger espécies e monitorar habitat.</p>
+          <a class="btn small" href="projetos.html">Saiba mais</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact container">
+      <h2>Contato</h2>
+      <form class="form" novalidate>
+        <label>
+          Nome
+          <input type="text" name="nome" required />
+          <span class="form-error" aria-live="polite"></span>
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required />
+          <span class="form-error" aria-live="polite"></span>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="5" required></textarea>
+          <span class="form-error" aria-live="polite"></span>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; ONG Natureza</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="ano"></span> ONG Natureza — Todos os direitos reservados</p>
+    </div>
   </footer>
+
 </body>
 </html>
