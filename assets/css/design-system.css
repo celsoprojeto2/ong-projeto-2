@@ -1,6 +1,6 @@
-/* Design system: variables, typography, spacing, palette (8 colors) */
+/* Design system: variáveis, tipografia, espaçamento, paleta (8 cores) */
 :root {
-  /* Paleta (8 cores) */
+  /* Paleta (8 cores) — extraída/ajustada a partir do seu primeiro projeto conforme indicado */
   --color-1: #0b6b3a;
   --color-2: #2b8a59;
   --color-3: #7dbb8a;
@@ -77,8 +77,3 @@ body {
 
 /* Acessibilidade */
 :focus { outline: 3px solid rgba(43,138,89,0.25); outline-offset: 2px; }
-
-/* Utilities */
-.hidden { display:none !important; }
-.skip-link { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
-.skip-link:focus { left: 0; top: 0; width: auto; height: auto; padding: 12px; background: var(--color-1); color: white; z-index: 9999; border-radius: 4px; }
